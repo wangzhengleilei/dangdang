@@ -1,0 +1,206 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"><title>Document</title><style>*{
+      margin: 0px;
+      padding: 0px;
+    }
+    ul,ol,li{
+      list-style-type:none;
+    }
+    a{
+      text-decoration:none;
+    }
+    html,body{
+      height: 100%;
+      background:#F6F9FB;
+    }
+    head{
+      width:100%;
+    }
+    .headbox{
+      width:1000px;
+      height:60px;
+      background:#ffffff;
+      margin:0 auto;
+      border-bottom:2px solid #F07700;
+    }
+    .headbox .banner{
+      width:250px;
+      height:60px;
+      background:url(images/banner.png) no-repeat;
+      background-size:100% 58px;
+      float:left;
+    }
+    .headbox .navigation{
+      float:right;
+    }
+    .headbox .navigation ul li{
+      float:left;
+    }
+    .headbox .navigation ul li a{
+      display:block;
+      font-size:12px;
+      color:black;
+      border-right:1px solid black;
+      margin-left:5px;
+      padding-right:5px;
+    }
+    .headbox .navigation ul li:last-child a{
+      border-right:none;
+    }
+    .headbox .navigation ul li a:hover{
+      color:Red;
+      text-decoration:underline;
+    }
+    .headbox .navigation p{
+      float:right;
+      font-size:12px;
+    }
+    .headbox a:hover{
+      text-decoration:underline;
+    }
+    /* register */
+    .containerbox{
+      width:100%;
+      border-bottom:1px solid #aaaaaa;
+    }
+    .container{
+      width:1000px;
+      min-height:500px;
+      background:#ffffff;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+    }
+    #register{
+      width: 1000px;
+      height:500px;
+      border:none;
+      display:flex;
+      justify-content:center;
+    }
+    #register .panel-body span{
+      font-size:12px;
+      margin-left:100px;
+    }
+    #register .panel-body .form-group{
+      display:flex;
+      margin-top:20px;
+    }
+    #register .panel-body .form-group label{
+      text-align:center;
+      line-height:29px;
+      margin-right:10px;
+    }
+    #register .panel-body .form-group .form-control{
+      width:400px;
+    }
+    #register .panel-body a{
+      display:block;
+      margin-top:5px;
+      margin-left:312px;
+    }
+    .alert{
+      margin: 0px 0px 10px 0px;
+      padding: 5px;
+      text-align: center;
+      display: none;
+    }
+    #btn1{
+      width:200px;
+      height:60px;
+      clear:right;
+      font-size:20px;
+      margin-left:145px;
+      background:red;
+      border-radius:30px;
+    }
+
+    /* footer */
+    footer{
+      width:100%;
+    }
+    footer .footerbox{
+      width:806px;
+      height:20px;
+      margin:0 auto;
+      background:#F6F9FB;
+      text-align:center;
+    }
+    footer .footerbox ul{
+      margin-top:50px;
+    }
+    footer .footerbox ul li{
+      float:left;
+    }
+    footer .footerbox ul li a{
+      display:block;
+      font-size:12px;
+      border-right:1px solid #aaaaaa;
+      margin-right:20px;
+      padding-right:20px;
+      color:#aaaaaa;
+      
+    }
+    footer .footerbox ul li a:hover{
+      color:red;
+    }
+    footer .footerbox .copy{
+      padding-top:50px;
+    }
+    footer .footerbox .copy span{
+      color:#aaaaaa;
+      font-size:12px;
+    }
+    footer .footerbox .licencebox ul{
+      width:633px;
+      height:20px;
+      margin:0 auto;
+      margin-top:10px;
+    }
+    footer .footerbox .licencebox ul li{
+      font-size:12px;
+      color:#aaaaaa;
+    }
+    footer .footerbox .licencebox ul li a{
+      border-right:none;
+      margin:0;
+      padding:0;
+      border-left:1px solid #aaaaaa;
+      margin-left:20px;
+      padding-left:20px;
+    }
+    footer .footerbox .licencebox ul li a:hover{
+      text-decoration:none;
+    }</style></head><body><!-- head --><head><div class="headbox"><div class="banner"></div><div class="navigation"><ul><li><a href="">购物车</a></li><li><a href="">我的订单</a></li><li><a href="">我的当当</a></li><li><a href="">礼品卡</a></li><li><a href="">手机当当</a></li><li><a href="">企业销售</a></li><li><a href="">帮助</a></li></ul><p>欢迎光临当当网，请 <a href="">登录</a> <a href="">免费注册</a></p></div></div></head><!-- 登录窗口 --><div class="newuser"><div class="newusrebox"><span></span></div></div><div class="containerbox"><div class="container"><div class="panel panel-primary" id="register"><div class="panel-body"><div class="form-group"><label for="username">手机号码</label> <input type="text" name="username" placeholder="手机号码" class="form-control"></div><span>手机号可用于登录、找回密码、接收订单通知等服务</span><div class="form-group"><label for="password">登录密码</label> <input type="password" name="password" placeholder="登录密码" class="form-control"></div><div class="form-group"><label for="repassword">确认密码</label> <input type="text" name="repassword" placeholder="确认密码" class="form-control"></div><div class="alert alert-danger" role="alert">...</div><button class="btn btn-primary" id="btn1">立即注册</button></div></div></div></div><footer><div class="footerbox"><ul><li><a href="">公司简介</a></li><li><a href="">诚聘英才</a></li><li><a href="">网站联盟</a></li><li><a href="">当当招商</a></li><li><a href="">机构销售</a></li><li><a href="">手机当当</a></li><li><a href="">官方Blog</a></li><li><a href="">知识产权</a></li><li><a href="">热词搜索</a></li></ul><div class="copy"><span>Copyright(C) 当当网 2004-2020,All Right Reserved</span></div><div class="licencebox"><ul><li>京ICP证041189号</li><li><a href="#">出版物经营许可证 新出发京批字第直0673号</a></li><li><a href="#">食品经营许可证：JY11101050363440</a></li></ul></div></div></footer></body><script type="module">import ajax from './ajax.js';
+  var oBtn = document.getElementById("btn1");
+  var aInput = document.querySelectorAll(".form-group input");
+  var oAlert = document.querySelector(".alert");
+  oBtn.onclick = function(){
+    ajax({
+      type: 'post',
+      url: 'register.php',
+      data: {
+        username: aInput[0].value,
+        password: aInput[1].value,
+        repassword: aInput[2].value,
+        createTime: new Date().getTime()
+      },
+      success: function(msg){
+        // console.log(msg);
+        var obj = JSON.parse(msg); //JSON.parse (<anonymous>) 返回的字符串不是json格式。
+        if(obj.code){
+          oAlert.className = 'alert alert-danger';
+        }else{
+          oAlert.className = 'alert alert-success';
+          jump();
+        }
+        oAlert.style.display = 'block';
+        oAlert.innerHTML = obj.msg;
+      },
+      error: function(msg){
+        console.log(msg);
+      }
+    })
+  }
+  function jump(){
+    window.location.href = "http://localhost/dangdang/login.html";
+  }</script></html>
